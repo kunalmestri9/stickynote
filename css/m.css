@@ -1,0 +1,74 @@
+*{
+  font-family:verdana;
+  font-size:15px
+}
+body{
+  margin:0;
+  background-image:url('../img/bg.jpg');
+}
+.stickynote {
+  background :#FFDA73;
+  margin:15px;
+  width:150px;
+  height:150px;
+  box-shadow :3px 4px 14px #ccc;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Safari and Chrome */
+  -o-transform: rotate(2deg); /* Opera */
+  -moz-transform: rotate(2deg); /* Firefox */
+  float: left;
+}
+
+.stickynote .header{
+  height:25px;
+  border-bottom:1px solid #e8c158;
+}
+.stickynote .header .pin{
+  width:20px;
+  height:20px;
+  border-radius:15px;
+  background:#D74A38;
+  box-shadow:5px 5px 10px #000;
+  float:left;
+}
+.stickynote .content{
+  margin:5px;
+}
+.pageHeader{
+  height:50px;
+  background-image:url('../img/bg.jpg');
+  border-bottom:1px solid #ccc;
+}
+.noteAdd #addnote {
+  height:20px;
+  width:300px;
+  border-radius:2px;
+  outline:none;
+  border:1px solid #999;
+  margin-top:10px;
+  margin-left:5px;
+}
+.buttonClickable{
+  border:none;
+  background-color:#4A8CF7;
+  border-radius:3px;
+  color:#fff;
+  padding:5px;
+  font-size:13px;
+  box-shadow:2px 2px 6px #000 ;
+}
+.btnClicked{
+  box-shadow:1px 1px 5px #000 inset;
+}
+.removeNote{
+  float:right;
+  background:#e8c158;
+  width:15px;
+  height:15px;
+  margin:5px;
+  color:#FFDA73;
+  font-size:12px;
+  text-indent:4px;
+  cursor:pointer;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sticky Note</title>
+    <link rel="stylesheet" type="text/css" href="./css/m.css">
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <style type="text/css">
+      
+    </style>
+  </head>
+  <body>
+    <div class="pageHeader">
+      <div class="noteAdd">
+        <input type="text" id="addnote"/>
+        <button id="btnAddNote" class="buttonClickable">  Add Note</button>
+      </div>
+    </div>
+    <div id="noteHolder"></div>
+    
+    <script id="sticknote" type="text/x-jquery-tmpl">
+      <div class="stickynote" id="stickNote${id}">
+        <div class="header">
+          <div class="pin"></div>
+          <div class="removeNote">x</div>
+        </div>
+      <input type="hidden" id="sticyNoteId" value="${id}"/> 
+       <div class="content">
+        ${content}
+       </div>
+       </div>
+    </script>
+  </body>
+</html>
